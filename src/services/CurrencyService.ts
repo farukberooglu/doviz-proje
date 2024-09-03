@@ -7,7 +7,7 @@ export interface Currency {
 }
 
 export const getCurrencies = async (): Promise<Currency[]> => {
-  // TCMB'den döviz kurlarını çekmek için proxy ile istek yapıyoruz
+  // TCMB'den döviz kurlarını çekmek için proxy ile istek yapılır buradaa
   const response = await axios.get('/kurlar/today.xml', {
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',

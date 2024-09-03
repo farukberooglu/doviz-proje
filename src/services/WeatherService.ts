@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '806fb9facf4afd9401522c69f7e1d4e7'; // OpenWeatherMap'ten aldığınız API anahtarını buraya yapıştırın
+const API_KEY = '806fb9facf4afd9401522c69f7e1d4e7'; //API anahtarı
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 export interface WeatherData {
@@ -20,7 +20,7 @@ export const getWeather = async (city: string): Promise<WeatherData> => {
     params: {
       q: city,
       appid: API_KEY,
-      units: 'metric' // Sıcaklık birimini Celsius yapmak için
+      units: 'metric' // celsius için
     }
   });
 
