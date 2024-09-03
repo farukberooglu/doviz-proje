@@ -1,3 +1,4 @@
+/* Mevcut stiller */
 .App {
   text-align: center;
 }
@@ -14,14 +15,16 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: auto;
+  border-radius:10px;
+  Width: 500px;
+  background-color: #25a7f3;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -35,4 +38,201 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Yeni eklenen stiller */
+
+/* Weather bileşeni */
+/* .weather-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 200px; /* Hava durumu bileşeni genişliği */
+  /* background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-container h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.weather-container p {
+  margin: 5px 0;
+}
+
+.weather-container img {
+  display: block;
+  margin: 0 auto;
+} */ */
+
+
+
+.weather-container {
+  width: 200px; /* Hava durumu bileşeni genişliği */
+  background-color: #2980b9; /* Arka planı mavi yapıyoruz */
+  color: white; /* Yazı rengini beyaz yapıyoruz */
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-container h3 {
+  margin: 0;
+  font-size: 0.9em;
+  color: #1a1dbc; /* Başlık rengi */
+}
+
+.weather-container select {
+  width: 80%;
+  padding: 3px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #34495e; /* Kenarlık */
+  background-color: #103c68; /* Arka plan rengi */
+  color: #f4f7f8; /* Yazı rengi */
+  font-size: 0.7em;
+}
+
+.weather-container p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.weather-container img {
+  display: block;
+  margin: 10px auto; /* İkona biraz boşluk ekledik */
+  width: 60px; /* İkon boyutu */
+  height: 60px; /* İkon boyutu */
+}
+
+
+
+
+
+
+
+
+
+/* Yeni eklenen stiller */
+
+/* Genel ayarlar */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+h1{
+  color: #ecf0f3;
+}
+
+/* Başlıklar */
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Input alanı */
+input[type="text"] {
+  width: 10%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 2px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Dropdown */
+select {
+  width: 20%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 2px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: #ecf0f1;
+}
+
+/* Radyo butonları */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Etiketler */
+label {
+  font-size: 1.2em;
+  color: #34495e;
+  margin-right: 20px;
+}
+
+/* Hesapla butonu */
+button {
+  width: 20%;
+  padding: 10px;
+  background-color: #2980b9;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+/* Sonuç gösterimi */
+.result {
+  margin-top: 20px;
+  padding: 5px; /* Daha küçük padding */
+  background-color: #27ae60;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2em; /* Daha küçük font */
+  max-width: 300px; /* Daha küçük genişlik */
+  margin: 0 auto; /* Ortala */
+}
+
+/* Tablo */
+table {
+  width: 50%; /* Daha küçük genişlik */
+  margin: 20px auto; /* Ortala ve üstten boşluk */
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+table th, table td {
+  padding: 10px; /* Daha küçük padding */
+  border-bottom: 2px solid #ecf0f1;
+  text-align: left;
+}
+
+table th {
+  background-color: #2980b9;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td {
+  color: #34495e;
 }
